@@ -1,0 +1,9 @@
+{% extends 'ejercicio/index.html' %}
+{% block title %}Personas{% endblock %}
+  {% block content %}
+    <h1>Listado de Personas</h1>
+    <br>
+        {% for persona in persona.all %}
+        		{{ persona.nombre }} {{ persona.apellido }} - {{ persona.telefono }} - {{ persona.email }}  <br><br>
+        {% endfor %}
+  {% endblock %}

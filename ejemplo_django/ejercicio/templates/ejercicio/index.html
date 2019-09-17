@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Ejercicio{% endblock %}</title>
+  </head>
+  <body>
+    <h1>Ejercicio de Ingenieria</h1>
+    <hr>
+    <!-- Navegación -->
+      <a href="/"><button type="button">Inicio</button></a>
+      <a href="/persona/"><button type="button">Personas</button></a>
+      <a href="/producto/"><button type="button">Productos</button></a>
+      <a href="/compra/"><button type="button">Compras</button></a>
+    <hr>
+    <h2>Bienvenid@s</h2>
+    {% block content %} {% endblock %}
+    <!-- Pié de página -->
+    <hr>
+    <footer>
+      <div>
+        <p>
+          Integrantes: Hugo Quintero | Hernan Aguirrezabala | TB2
+        </p>
+        <p>&copy; Ingenieria de Software 2019</p>
+      </div>
+	  </footer>
+  </body>
+</html>

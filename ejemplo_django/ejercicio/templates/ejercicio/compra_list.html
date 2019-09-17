@@ -1,0 +1,9 @@
+{% extends 'ejercicio/index.html' %}
+{% block title %}Compras{% endblock %}
+  {% block content %}
+    <h1>Listado de Compras</h1>
+    <br>
+        {% for compra in compra.all %}
+        		Articulo {{ compra.titulo }}, Precio: {{ compra.precio }}, Nombre de Cliente: {{ compra.nombre }} - Fecha de compra: {{ compra.fecha_compra }} - Fecha de envio: {{ compra.fecha_envio }} <br><br>
+        {% endfor %}
+  {% endblock %}
